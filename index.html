@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cal convertor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="heading">
+      <h1>CalcPond</h1>
+      <p>various types of calculator</p>
+    </div>
+
+    <div class="calc__hcf">
+      <h3>Please select an operation!</h3>
+      <form>
+        <input type="text" name="numberLists">
+        <select name="operation" onchange="labelHandler()">
+          <option value="">select</option>
+          <option value="hcf">HCF</option>
+          <option value="lcm">LCM</option>
+        </select>
+        <input type="submit" value="Calculate">
+      </form>
+      <div>
+        <p class="result">&nbsp;</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
